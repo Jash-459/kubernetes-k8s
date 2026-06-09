@@ -1,6 +1,6 @@
 # ☸️ Kubernetes-k8s
 
-![Kubernetes](https://img.shields.io/badge/Kubernetes-1.30+-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1.34-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![kubeadm](https://img.shields.io/badge/kubeadm-Setup-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen?style=for-the-badge)
 
@@ -11,11 +11,11 @@
 >Whether you're an engineer building production-grade clusters, a student exploring Kubernetes for the first time, or simply someone who stumbled upon this repo and found it useful — you are most welcome here.
 
 >This project is as much about community as it is about Kubernetes. If you:
-    > Want to contribute a guide, fix, or improvement
-    > Have a suggestion or a better way to do something
-    > Spotted an error or outdated information
-    > Are learning and want to discuss concepts or ask questions
-    > Just want to connect with someone who shares a passion for cloud-native tech
+     Want to contribute a guide, fix, or improvement
+     Have a suggestion or a better way to do something
+     Spotted an error or outdated information
+     Are learning and want to discuss concepts or ask questions
+     Just want to connect with someone who shares a passion for cloud-native tech
 
 >...then don't hesitate to reach out. Open an issue, start a discussion, or just drop a message. Every idea, no matter how small, is valued.
 
@@ -92,7 +92,7 @@ Choose your setup path:
 
 ### Cluster Setup (PDF Reference)
 
-📄 [`Cluster Setup.pdf`](./Cluster%20Setup.pdf)
+📄 [`Cluster Setup.pdf`](./Cluster-Setup.pdf)
 
 A detailed PDF walkthrough covering end-to-end cluster provisioning — includes pre-requisites, network configuration, runtime setup, and post-install validation steps. Recommended as a companion to the markdown guides.
 
@@ -116,11 +116,11 @@ The fastest way to get a working Kubernetes cluster up and running. This guide c
 
 ### Hard Way Setup
 
-Inspired by [Kelsey Hightower's Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way), these guides provision Kubernetes **without any automation tools** — every component is configured manually to give you full visibility into how the control plane works.
+These guides were born out of pure curiosity — no vlogs, no blogs, no courses, no tutorials. Just raw exploration, trial and error, and a stubborn desire to understand how Kubernetes truly works under the hood. Every component here was figured out independently, the hard way, the real way.
 
 #### Single-Master
 
-📁 [`HardWay Setup/Single-Master/Single-master-setup.md`](./HardWay%20Setup/Single-Master/Single-master-setup.md)
+📁 [`HardWay-Setup/Single-Master/Single-master-setup.md`](./HardWay-Setup/Single-Master/Single-master-setup.md)
 
 Covers provisioning a fully functional single-master Kubernetes cluster from scratch:
 
@@ -131,7 +131,7 @@ Covers provisioning a fully functional single-master Kubernetes cluster from scr
 - kubectl remote access configuration
 - DNS add-on deployment
 
-🖼️ See [`Architecture.png`](./HardWay%20Setup/Single-Master/Architecture.png) for the node topology and component layout.
+🖼️ See [`Architecture.png`](./HardWay-Setup/Single-Master/Architecture.png) for the node topology and component layout.
 
 #### Multi-Master
 
@@ -148,9 +148,9 @@ Will cover High Availability (HA) control plane setup with:
 
 ## Architecture
 
-The diagram below (from [`HardWay Setup/Single-Master/Architecture.png`](./HardWay%20Setup/Single-Master/Architecture.png)) illustrates the single-master cluster topology, including the relationships between the control plane components, etcd, and worker nodes.
+The diagram below (from [`HardWay-Setup/Multi-Master/Architecture.png`](./HardWay-Setup/Multi-Master/Architecture.png)) illustrates the single-master cluster topology, including the relationships between the control plane components, etcd, and worker nodes.
 
-![Architecture](./HardWay%20Setup/Single-Master/Architecture.png)
+![Architecture](./HardWay-Setup/Multi-Master/Architecture.png)
 
 ---
 
