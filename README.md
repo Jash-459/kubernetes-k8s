@@ -65,7 +65,7 @@ Kubernetes-k8s/
     │   └── Architecture.png           # Architecture diagram for single-master topology
     │
     └── Multi-Master/
-        └── (coming soon)              # Multi-master HA setup — work in progress
+        └── (coming soon)              # Multi-master HA setup 
 ```
 
 ---
@@ -84,7 +84,7 @@ Choose your setup path:
 |---|---|---|
 | [Kubeadm Setup](./Kubeadm-Setup/kubeadm-cluster.md) | ⭐⭐ Medium | Dev/staging clusters, quick provisioning |
 | [Single-Master Hard Way](./HardWay%20Setup/Single-Master/Single-master-setup.md) | ⭐⭐⭐ High | Learning internals, custom PKI, deep control |
-| Multi-Master Hard Way | ⭐⭐⭐⭐ Advanced | Production HA clusters *(coming soon)* |
+| Multi-Master Hard Way | ⭐⭐⭐⭐ Advanced | Production HA clusters  |
 
 ---
 
@@ -135,7 +135,7 @@ Covers provisioning a fully functional single-master Kubernetes cluster from scr
 
 #### Multi-Master
 
-📁 `HardWay Setup/Multi-Master/` — **Work in Progress**
+📁 [`HardWay-Setup/Multi-Master/Multi-master-setup.md`](./HardWay-Setup/Multi-Master/Multi-master-setup.md)
 
 Will cover High Availability (HA) control plane setup with:
 
@@ -148,9 +148,9 @@ Will cover High Availability (HA) control plane setup with:
 
 ## Architecture
 
-The diagram below (from [`HardWay-Setup/Multi-Master/Architecture.png`](./HardWay-Setup/Multi-Master/Architecture.png)) illustrates the single-master cluster topology, including the relationships between the control plane components, etcd, and worker nodes.
+The diagram below (from [`HardWay-Setup/Multi-Master/architecture.png`](./HardWay-Setup/Multi-Master/architecture.png)) illustrates the single-master cluster topology, including the relationships between the control plane components, etcd, and worker nodes.
 
-![Architecture](./HardWay-Setup/Multi-Master/Architecture.png)
+![Architecture](./HardWay-Setup/Multi-Master/architecture.png)
 
 ---
 
@@ -175,7 +175,6 @@ Before using any setup guide in this repo, ensure your nodes meet the following 
 | Resource | Link |
 |---|---|
 | Official Kubernetes Docs | [kubernetes.io/docs](https://kubernetes.io/docs/home/) |
-| Kubernetes The Hard Way | [github.com/kelseyhightower/kubernetes-the-hard-way](https://github.com/kelseyhightower/kubernetes-the-hard-way) |
 | kubeadm Install Guide | [kubernetes.io/docs/setup/production-environment/tools/kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) |
 | Kubernetes Release Notes | [kubernetes.io/releases](https://kubernetes.io/releases/) |
 | Kubernetes Networking (CNI) | [kubernetes.io/docs/concepts/cluster-administration/networking](https://kubernetes.io/docs/concepts/cluster-administration/networking/) |
