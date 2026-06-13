@@ -64,8 +64,7 @@ Kubernetes-k8s/
     │   ├── Single-master-setup.md     # Full single-master hard-way setup guide
     │   └── Architecture.png           # Architecture diagram for single-master topology
     │
-    └── Multi-Master/
-        └── (coming soon)              # Multi-master HA setup 
+    └── Multi-Master/              # Multi-master HA setup 
 ```
 
 ---

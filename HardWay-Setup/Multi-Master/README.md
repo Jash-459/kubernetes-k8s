@@ -40,10 +40,11 @@
 8. [Traffic & Request Flow](#-traffic--request-flow)
 9. [Security Model](#-security-model)
 10. [Component Versions](#-component-versions)
-11. [Prerequisites](#-prerequisites)
-12. [Setup Guide](#-setup-guide)
-13. [Key Concepts Glossary](#-key-concepts-glossary)
-14. [Further Learning](#-further-learning)
+11. [HA Testing](#-Multi-master-Testing)
+12. [Prerequisites](#-prerequisites)
+13. [Setup Guide](#-setup-guide)
+14. [Key Concepts Glossary](#-key-concepts-glossary)
+15. [Further Learning](#-further-learning)
 
 ---
 
@@ -433,6 +434,17 @@ This cluster is built with a **defence-in-depth** security posture. Ten key secu
 | Gateway API CRDs | v1.2.0 | Modern successor to Ingress |
 | NGINX Gateway Fabric | v1.5.1 | Ingress / Gateway controller |
 | Ubuntu | 22.04 LTS | Node operating system |
+
+---
+
+---
+
+## 📦 Multi-master-Testing
+
+Comprehensive validation testing was conducted on a production-grade multi-master Kubernetes cluster provisioned manually via the "Kubernetes The Hard Way" methodology, encompassing end-to-end verification of control plane high availability, etcd quorum integrity, API server load balancing, and worker node registration across all cluster components. Testing covered critical failure scenarios including single master node failure and recovery, etcd leader election under simulated outages, kube-scheduler and kube-controller-manager leader election via lease-based mechanisms, and seamless pod rescheduling across healthy nodes during control plane disruptions. Network policy enforcement, CNI plugin stability, CoreDNS resolution, and inter-pod communication across worker nodes were validated under sustained load. Additionally, certificate rotation, RBAC authorization, kubeconfig context switching across multiple API server endpoints, and persistent volume lifecycle operations were tested to ensure compliance with production readiness standards. All test cases passed within defined SLO thresholds, confirming the cluster's resilience, fault tolerance, and operational stability for production workloads.
+
+📄 Navigate to this URL to read the testing article:**[`HA-Test.md`](./HA-Test.md)** **[`Test Report`](./HA-Test-Report.docx)**  **[`Test Evidence`](./Test-Evidence.pdf)**.
+                                                                            
 
 ---
 
